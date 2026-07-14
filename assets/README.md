@@ -1,3 +1,3 @@
-# Assets
+## 🏗️ Architecture
 
-Architecture diagrams, banners and other project assets.
+![Architecture](assets/architecture.png)
