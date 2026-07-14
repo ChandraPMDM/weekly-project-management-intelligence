@@ -255,7 +255,7 @@ This project showcases practical experience with:
 
 **Chandra Shekar D**
 
-Technical Delivery Manager | Agile Practitioner | AI Automation Enthusiast
+Project Manager | Agile Practitioner | AI Automation Enthusiast
 
 GitHub: https://github.com/ChandraPMDM
 
