@@ -88,14 +88,13 @@
       "name": "OpenAI Chat Model",
       "credentials": {
         "openAiApi": {
-          "id": "cNrfSSKkPZ8xFSgs",
-          "name": "OpenAI account"
+              ...
         }
       }
     },
     {
       "parameters": {
-        "sendTo": "gpu1444@gmail.com",
+        "sendTo": "YOUR_EMAIL@gmail.com",
         "subject": "={{ \"📬 Weekly Project Management Intelligence | \" + new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) }}",
         "message": "={{ $json.text }}",
         "options": {}
@@ -111,8 +110,7 @@
       "webhookId": "7393befd-c85e-4a9e-900a-30fe2e7b4f95",
       "credentials": {
         "gmailOAuth2": {
-          "id": "GNFVg4AfLadF0ZiD",
-          "name": "Gmail account"
+          ...
         }
       }
     }
