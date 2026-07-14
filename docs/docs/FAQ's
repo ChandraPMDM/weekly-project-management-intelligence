@@ -1,0 +1,23 @@
+# Frequently Asked Questions
+
+## Why are credentials missing?
+
+Credentials are intentionally excluded for security.
+
+## Which OpenAI model is supported?
+
+GPT-4.1 Mini
+
+## Which Gmail account is supported?
+
+Any Gmail account connected through OAuth.
+
+## Can I use multiple RSS feeds?
+
+Yes.
+
+This is planned for Version 2.0.
+
+## Can I publish directly to LinkedIn?
+
+Planned for Version 3.0.
