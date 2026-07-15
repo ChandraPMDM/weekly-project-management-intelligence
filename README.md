@@ -96,9 +96,11 @@ The automation follows a six-stage pipeline:
 <img src="screenshots/Execution.png" width="95%" alt="Workflow Execution">
 </p>
 
-### Workflow
+### n8n Workflow
 
-![Workflow](screenshots/workflow/workflow.png)
+<p align="center">
+  <img src="screenshots/workflow.png" width="95%" alt="n8n Workflow">
+</p>
 
 ### Newsletter
 
