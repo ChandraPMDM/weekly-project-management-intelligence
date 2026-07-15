@@ -3,3 +3,6 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-success)](#)
+<p align="center">
+  <img src="assets/architecture.png" width="100%" alt="Weekly Project Management Intelligence Architecture">
+</p>
