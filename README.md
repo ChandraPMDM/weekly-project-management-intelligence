@@ -14,6 +14,20 @@ Automate your weekly Project Management intelligence with AI, n8n, OpenAI GPT-4.
 </p>
 
 ## 📖 Overview
+---
+
+## ✨ Features
+
+- 🤖 AI-powered Project Management newsletter generation
+- 📰 Aggregates articles from multiple trusted RSS feeds
+- 🧠 Uses OpenAI GPT-4.1 for intelligent summarization
+- 📧 Automatically sends HTML newsletters through Gmail
+- ⏰ Weekly scheduled execution using n8n Schedule Trigger
+- ⚡ JavaScript preprocessing for filtering and formatting
+- 📱 Responsive HTML email compatible with major email clients
+- 🔒 Secure OAuth authentication for Gmail integration
+- 💰 Low operating cost with configurable OpenAI usage
+- 🔧 Easily extensible for additional RSS feeds or delivery channels
 
 This project automates the creation and delivery of a professional weekly Project Management newsletter using AI and workflow automation.
 
@@ -45,18 +59,42 @@ The solution is built completely in **n8n**, making it easy to customize, extend
 
 ## 🏗 Workflow
 
-The automation executes in the following sequence:
+The automation follows a six-stage pipeline:
 
-1. Schedule Trigger
-2. RSS Feed Collection
-3. JavaScript Processing
-4. OpenAI Analysis
-5. HTML Newsletter Generation
-6. Gmail Delivery
+| Step | Component | Purpose |
+|------|-----------|----------|
+| 1 | Schedule Trigger | Starts the workflow every Saturday |
+| 2 | RSS Reader | Collects the latest Project Management articles |
+| 3 | JavaScript Function | Cleans, filters, and prepares article data |
+| 4 | OpenAI GPT-4.1 | Generates summaries, key insights, and newsletter content |
+| 5 | HTML Generator | Creates a professional email layout |
+| 6 | Gmail | Delivers the newsletter automatically |
 
 ---
 
 ## 📸 Screenshots
+
+### n8n Workflow
+
+<p align="center">
+<img src="screenshots/workflow/workflow.png" width="95%">
+</p>
+
+---
+
+### Newsletter Preview
+
+<p align="center">
+<img src="screenshots/Newsletter.png" width="95%">
+</p>
+
+---
+
+### Successful Execution
+
+<p align="center">
+<img src="screenshots/Execution.png" width="95%">
+</p>
 
 ### Workflow
 
@@ -72,9 +110,19 @@ The automation executes in the following sequence:
 
 ---
 
+
 ## 🚀 Installation
 
-1. Clone this repository.
+### Prerequisites
+
+- n8n (Cloud or Self-hosted)
+- OpenAI API Key
+- Gmail Account
+- Gmail OAuth Credentials
+
+### Steps
+
+1. Clone the repository
 
 ```bash
 git clone https://github.com/ChandraPMDM/weekly-project-management-intelligence.git
@@ -86,54 +134,91 @@ git clone https://github.com/ChandraPMDM/weekly-project-management-intelligence.
 workflow/Weekly_PM_Intelligence_Template.json
 ```
 
-into n8n.
+into your n8n workspace.
 
-3. Configure:
+3. Configure
 
-- OpenAI API
-- Gmail OAuth
+- OpenAI Credentials
+- Gmail Credentials
 - Schedule Trigger
 
 4. Activate the workflow.
+
+5. Execute once manually to verify configuration.
+
+The workflow will then execute automatically every week.
+
+---
+
+## ⚙ Configuration
+
+Configure the following before activation:
+
+| Component | Required |
+|-----------|----------|
+| OpenAI API Key | ✅ |
+| Gmail OAuth | ✅ |
+| RSS Feed URLs | Optional |
+| Schedule | Optional |
+| Email Recipients | ✅ |
+
+All credentials are securely stored within n8n.
 
 ---
 
 ## 📂 Repository Structure
 
 ```
-.
+weekly-project-management-intelligence
+│
 ├── assets/
+│   └── architecture.png
+│
 ├── docs/
+│   ├── CONTRIBUTING.md
+│   ├── INSTALLATION.md
+│   ├── ARCHITECTURE.md
+│   └── PROMPTS.md
+│
 ├── screenshots/
+│   ├── workflow/
+│   ├── Newsletter.png
+│   └── Execution.png
+│
 ├── workflow/
 │   └── Weekly_PM_Intelligence_Template.json
-├── README.md
+│
+├── CHANGELOG.md
 ├── LICENSE
-└── CHANGELOG.md
+└── README.md
 ```
-
 ---
 
 ## 🛠 Technologies Used
 
-- n8n
-- OpenAI GPT-4.1
-- JavaScript ES6
-- RSS
-- Gmail API
-- HTML
+| Technology | Purpose |
+|------------|----------|
+| n8n | Workflow Automation |
+| OpenAI GPT-4.1 | AI Content Generation |
+| JavaScript | Data Processing |
+| RSS | Article Collection |
+| Gmail API | Email Delivery |
+| HTML | Newsletter Formatting |
 
 ---
 
 ## 📅 Roadmap
 
-- LinkedIn Post Generator
-- PDF Newsletter Export
-- Teams Integration
-- Slack Notifications
-- Microsoft Outlook Support
-- Power BI Dashboard
-- Multi-language Support
+- [x] Weekly AI Newsletter
+- [x] Gmail Delivery
+- [x] RSS Integration
+- [x] OpenAI Summarization
+- [ ] LinkedIn Post Generator
+- [ ] PDF Newsletter Export
+- [ ] Microsoft Teams Notifications
+- [ ] Slack Integration
+- [ ] Outlook Delivery
+- [ ] Power BI Dashboard
 
 ---
 
@@ -141,7 +226,14 @@ into n8n.
 
 Contributions are welcome.
 
-Feel free to submit Issues, Forks, or Pull Requests.
+If you'd like to improve this project:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Submit a Pull Request.
+
+Ideas, bug reports, and feature requests are always appreciated.
 
 ---
 
@@ -149,4 +241,4 @@ Feel free to submit Issues, Forks, or Pull Requests.
 
 This project is licensed under the MIT License.
 
-See LICENSE for details.
+See the LICENSE file for more information.
