@@ -77,7 +77,7 @@ The automation follows a six-stage pipeline:
 ### n8n Workflow
 
 <p align="center">
-<img src="screenshots/workflow/workflow.png" width="95%">
+<img src="screenshots/workflow.png" width="95%" alt="n8n Workflow">
 </p>
 
 ---
@@ -85,7 +85,7 @@ The automation follows a six-stage pipeline:
 ### Newsletter Preview
 
 <p align="center">
-<img src="screenshots/Newsletter.png" width="95%">
+<img src="screenshots/Newsletter.png" width="95%" alt="Newsletter Preview">
 </p>
 
 ---
@@ -93,7 +93,7 @@ The automation follows a six-stage pipeline:
 ### Successful Execution
 
 <p align="center">
-<img src="screenshots/Execution.png" width="95%">
+<img src="screenshots/Execution.png" width="95%" alt="Workflow Execution">
 </p>
 
 ### Workflow
